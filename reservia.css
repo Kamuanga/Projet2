@@ -1,0 +1,157 @@
+#logo{
+}
+header h1
+{
+	font-family: 'Ballparkweiner', serif;
+}
+body
+{
+	font-family: raleway;
+	background-color: write;
+	color: write;
+}
+nav a
+{
+	text-decoration: none;
+	list-style-type: none;
+	text-align: right;
+	margin-right: 15px;
+	display: inline;
+}
+nav li
+{
+	float: right;
+	margin-right: 15px;
+	display: inline;
+}
+.fa-dog, .fa-heart, .fa-child, .fa-money-bill{
+	list-style-type: none;
+	color: #0065FC
+}
+p{
+	font-weight: normal;
+	font-style: normal;
+}
+#filtres ul{
+	padding: 10px 10px 10px 10px;
+	border: 5px;
+	list-style-type: none;
+}
+#filtres a:hover{
+	text-decoration: blink;
+	color: black;
+	border: 1px solid black;
+}
+#section_hebergements{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+}
+#section_les_plus_populaires{
+	background-color: #F2F2F2
+}
+#section_activites{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	display: inline;
+}
+.test1{
+	position: relative;
+
+}
+figcaption{
+	position: absolute;
+	margin-bottom: 60px;
+}
+h2{
+   font-size: large;
+   font-style: normal;
+}
+
+#section_hebergements img, #section_activites img, #section_les_plus_populaires img{
+	width: 150px;
+}
+#section_les_plus_populaires p{
+	flex-direction: right;
+}
+
+
+.blocs3
+{
+	display: flex;
+	float: left;
+	margin-right: 15px;
+}
+p
+{
+	border border-top: 
+}
+
+}
+.section
+{
+	float: left;
+}
+footer
+{
+	background-color: #F2F2F2
+}
+@media all and (max-width: 1024px)
+{
+	nav
+	{
+		width: auto;
+		text-align: left;
+	}
+	nav user-select: {
+		flex-direction: columns: 
+	}
+	nav li
+	{
+		padding-left: 4px;
+	}
+	nav a:hover 
+	{
+		border-bottom: 0;
+	}
+
+	
+	}
+	.a:hover 
+	{
+		text-decoration: underline;
+
+
+
+	}
+
+
+
+
+#a_propos
+{
+	margin-left: 64px;
+	text-align: left;
+
+}
+#a_propos ul, #a_propos h3
+{
+list-style-type: none;
+text-align: left;
+margin-left: 15px;
+}
+
+#nos_hebergements ul
+{
+	text-align: center;
+}
+#nos_hebergements h3
+{
+	text-align: center;
+}
+#assistance ul, #assistance h3
+{
+	text-align: right;
+}
