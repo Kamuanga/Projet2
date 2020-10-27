@@ -1,4 +1,5 @@
-#logo{
+#logo img{
+	width: 100px;
 }
 header h1
 {
@@ -6,36 +7,83 @@ header h1
 }
 body
 {
+	margin-left: 30px;
+	margin-right: 10px;
 	font-family: raleway;
 	background-color: write;
 	color: write;
 }
 nav a
 {
+
 	text-decoration: none;
 	list-style-type: none;
 	text-align: right;
 	margin-right: 15px;
 	display: inline;
+
 }
 nav li
 {
 	float: right;
 	margin-right: 15px;
 	display: inline;
+	margin-bottom: : 300px;
 }
-.fa-dog, .fa-heart, .fa-child, .fa-money-bill{
+nav ul{
+	display: flex;
+}
+.header{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 30px;
+}
+.menu{
+	margin-left: 600px;
+}
+.recherche{
+	padding-bottom: 15px;
+}
+.fa-dog, .fa-heart, .fa-child, .fa-money-bill, .fa-star{
 	list-style-type: none;
+	padding-top: 10px;
+	margin-right: -40px;
 	color: #0065FC
 }
-p{
-	font-weight: normal;
-	font-style: normal;
+.filtre{
+	padding-top: 15px;
+	margin-right: 10px;
 }
-#filtres ul{
-	padding: 10px 10px 10px 10px;
-	border: 5px;
-	list-style-type: none;
+p{
+	font-weight: none;
+	font-style: none;
+}
+.fa-map-marker-alt{
+	border: 15px;
+	padding: 10px;
+	background-color: #F2F2F2; 
+}
+input{
+	width: 150px;
+	max-height: 80px;
+	padding: 7px;
+	color: #0065FC;
+}
+button{
+	border: 1px;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #0065FC;
+}
+
+#filtres span{
+	border: 2px solid #DEEBFF;
+	border-radius: 30px;
+	padding: 4px;
+}
+span, .fas, .filtres {
+	display: flex;
+	justify-content: flex-start;
 }
 #filtres a:hover{
 	text-decoration: blink;
@@ -49,41 +97,91 @@ p{
 	background-color: #F2F2F2;
 }
 #section_les_plus_populaires{
-	background-color: #F2F2F2
-}
-#section_activites{
 	display: flex;
 	flex-direction: column;
-	text-align: justify;
-	display: inline;
+	background-color: #F2F2F2
 }
-.test1{
+#section_les_plus_populaires img {
 	position: relative;
+	width: 30%;
+	height: 100%;
+}
 
+#section_activites{
+	display: flex;
+	justify-content: flex-start;
+	border: 2px;
+	border-radius: 7px;
 }
-figcaption{
-	position: absolute;
-	margin-bottom: 60px;
+.test6{
+	display: flex;
+	flex-direction: column;
 }
+
+.bloc1{
+	display: flex;
+	justify-content: flex-start;
+}
+.bloc4{
+	display: flex;
+	justify-content: flex-start;
+}
+
+figure{
+	border: 2px;
+	border-radius: 10px;
+	-webkit-box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
+-moz-box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
+box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
+	margin-left: : 20px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	background-color: white;
+	overflow: hidden;
+}
+figure.bloc1{
+	width: 250px;
+	height: 150px;
+}
+.essai{
+	width: 100%;
+	height: 100%;
+}
+
 h2{
    font-size: large;
    font-style: normal;
 }
+.etoile{
+	margin-left: 120px;
+	flex-grow: 2;
+}
 
-#section_hebergements img, #section_activites img, #section_les_plus_populaires img{
+#section_hebergements img{
+	width: 200px;
+}
+#section_activites img{
 	width: 150px;
 }
-#section_les_plus_populaires p{
-	flex-direction: right;
+#pop img{
+     width: 150px;
+     height: 170px;
 }
 
-
-.blocs3
-{
+.fa-info{
+	border: 1px solid #DEEBFF;
+	border-radius: 25px;
+	padding: 10px;
+}
+article{
 	display: flex;
-	float: left;
-	margin-right: 15px;
+	align-items: stretch;
+	margin-top: 70px;
 }
+
+
+
 p
 {
 	border border-top: 
@@ -98,42 +196,22 @@ footer
 {
 	background-color: #F2F2F2
 }
-@media all and (max-width: 1024px)
-{
-	nav
-	{
-		width: auto;
-		text-align: left;
-	}
-	nav user-select: {
-		flex-direction: columns: 
-	}
-	nav li
-	{
-		padding-left: 4px;
-	}
-	nav a:hover 
-	{
-		border-bottom: 0;
-	}
-
-	
-	}
-	.a:hover 
-	{
-		text-decoration: underline;
 
 
 
-	}
+#info, a{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
-
-
-
-#a_propos
+#a_propos, a
 {
 	margin-left: 64px;
 	text-align: left;
+	text-decoration: none;
+
 
 }
 #a_propos ul, #a_propos h3
@@ -146,6 +224,7 @@ margin-left: 15px;
 #nos_hebergements ul
 {
 	text-align: center;
+	list-style-type: none;
 }
 #nos_hebergements h3
 {
@@ -154,4 +233,5 @@ margin-left: 15px;
 #assistance ul, #assistance h3
 {
 	text-align: right;
+	list-style-type: none;
 }
