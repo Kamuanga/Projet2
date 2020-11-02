@@ -104,8 +104,10 @@ span, .fas, .filtres {
 #section_les_plus_populaires img {
 	position: relative;
 	width: 30%;
-	height: 100%;
+	height:100px;
+	object-fit: cover;
 }
+
 
 #section_activites{
 	display: flex;
@@ -139,6 +141,19 @@ box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
 	padding-top: 2px;
 	background-color: white;
 	overflow: hidden;
+} 
+figure.hebergement{
+	width: 250px;
+	height: 206px;
+}
+figure .picture{
+	width: 250px;
+	height: 100px;
+	overflow-y: hidden;
+}
+figure .picture img{
+	width: 100%;
+
 }
 figure.bloc1{
 	width: 250px;
@@ -149,6 +164,7 @@ figure.bloc1{
 	height: 100%;
 }
 
+
 h2{
    font-size: large;
    font-style: normal;
@@ -158,9 +174,6 @@ h2{
 	flex-grow: 2;
 }
 
-#section_hebergements img{
-	width: 200px;
-}
 #section_activites img{
 	width: 150px;
 }
