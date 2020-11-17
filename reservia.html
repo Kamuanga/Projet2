@@ -30,7 +30,7 @@
         <div id="titre_principal">
 
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre ville ou en pleine nature<br/>
+          <p>En plein centre ville ou en pleine nature</p>
         </div>
         <div class="recherche">
           <form method="post" action="traitement.php">
@@ -38,17 +38,17 @@
                  <label for="recherche"><i class="fas fa-map-marker-alt"></i></label><input type="search" name="recherche" id="recherche" placeholder="Marseille,France" Size="10" maxlength="30"/><button>Recherche</button>
           </form>
         </div>
-        <span id="filtres">
+        <div id="filtres">
             <strong class="filtre">Filtres</strong>
             
-                <span>
+                <div>
                     <i class="fas fa-money-bill"></i>
                     <a class="filtres" href="#"> Économique</a>
-                </span>
-                <span><i class="fas fa-child"></i><a class="filtres" href="#"> Familial</a></span>
-                <span><i class="fas fa-heart"></i><a class="filtres" href="#"> Romantique</a></span>
-                <span><i class="fas fa-dog"></i><a class="filtres" href="#"> Animaux autorisés</a></span>
-        </span>
+                </div>
+                <div><i class="fas fa-child"></i><a class="filtres" href="#"> Familial</a></div>
+                <div><i class="fas fa-heart"></i><a class="filtres" href="#"> Romantique</a></div>
+                <div><i class="fas fa-dog"></i><a class="filtres" href="#"> Animaux autorisés</a></div>
+        </div>
        
      </header>
     <section>
@@ -59,7 +59,7 @@
                 <h2 id='hebergements'>Hébergements à Marseille</h2>
              <div class="bloc1">
                 <figure class="hebergement">
-                    <div style="position:relative"class="picture">
+                    <div style="position:relative" class="picture">
                         <img style="position:absolute;top:-28px" src='images/hebergements/4_small/marcus1.jpg' alt="images">
                     </div>        
                     <figcaption class="legende1">
@@ -80,31 +80,31 @@
                 </figure>
                 <figure class="hebergement">
                     <div style="position:relative" class="picture">
-                        <img style="position:absolute;top: -44px"src='images/hebergements/4_small/resisetopia1.jpg' alt="images"/>
+                        <img style="position:absolute;top: -44px" src='images/hebergements/4_small/resisetopia1.jpg' alt="images"/>
                     </div>
-                    <figcaption>
+                    <figcaption class="legende1">
                         <p>Hôtel les Mouettes</p>
                         <p>Nuit à paritr de 76€</p>
                         <p class="etoile"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fal fa-star"></i></p>
                     </figcaption>
                 </figure>
             </div>
-            <div class="bloc4">
+            <div class="bloc2">
                 <figure class="hebergement">
                     <div style="position: relative" class="picture">
                         <img style="position:absolute; top:-77px" src='images/hebergements/4_small/annie_sprat1.jpg' alt="images">
                     </div>
-                    <figcaption>
+                    <figcaption class="legende1">
                         <p>Hôtel de la mer</p>
                         <p>Nuit à partir de 46€</p>
                         <p class="etoile"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fal fa-star"></i><i class="fal fa-star"></i></p>
                     </figcaption>
                 </figure>
                 <figure class="hebergement">
-                    <div style="position:relative"class="picture">
+                    <div style="position:relative" class="picture">
                         <img style="position:absolute; top:-28px" src='images/hebergements/4_small/nicate1.jpg' alt="images">
                     </div>
-                    <figcaption>
+                    <figcaption class="legende1">
                         <p>Auberge Le Panier<br/>
                         Nuit à partir de 23€<br/>
                         <span class="etoile"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fal fa-star"></i></span>
@@ -114,7 +114,7 @@
                     <div style="position:relative" class="picture">
                         <img style="position:absolute; top:-146px" src="images/hebergements/4_small/febrian1.jpg" alt="images">
                     </div>
-                    <figcaption>
+                    <figcaption class="legende1">
                         <p>Hôtel chez Amina</p>
                         <p>Nuit à partir de 96€</p>
                         <p class="etoile"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
@@ -135,15 +135,16 @@
                 </figure >
                 <figure class="populaires">
                     <img src="images/hebergements/4_small/creative.jpg" alt="images"/>
-                    <figcaption>
-                        <p>Au coeur de l'eau Chambres d'hôtes</p>
+                    <figcaption class="legende2">
+                        <p>Au coeur de l'eau <br/>
+                        Chambres d'hôtes</p>
                         <p>Nuit à partir de 71€</p>
                         <p class="etoile"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fal fa-star"></i></p>
                     </figcaption>
                 </figure>
                 <figure class="populaires">
                     <img src="images/hebergements/4_small/febrian.jpg" alt="images"/>
-                    <figcaption>
+                    <figcaption class="legende2">
                         <p>Hôtel Tout bleu et Blanc</p>
                         <p>Nuit à partir de 60€</p>
                         <p class="etoile"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fal fa-star"></i></p>
@@ -155,45 +156,49 @@
            
         </article>
     </section>
-    <section>
+    
         <aside>
-
             <h2 id='activites'>Activités à Marseille</h2>
-            <div id="section_activites">  
-                <figure class="activites">
+            <div id="section_activites">
+                <div class="image">
+                 <figure class="activites">
                     <img  class="essai" src='images/activites/1_xlarge/reno.jpg' alt="activites">
                     <figcaption>
                         <p>Vieux port</p>
                     </figcaption>
-                </figure>
-            <div class="test6">
-                <figure class="activites">
+                 </figure>
+                </div>
+            <div class="map">
+                <figure class="column">
                     <img src='images/activites/3_medium/paul.jpg' alt="activites">
                     <figcaption>Fort de Pomègues</figcaption>
                 </figure>
-                <figure class="activites">
+                <figure class="frioul">
                     <img src='images/activites/3_medium/kevin.jpg' alt="activites">
                     <figcaption>îles du Frioul</figcaption>
                 </figure>
             </div>
+            <div class="image">
                 <figure class="activites">
                     <img class="essai" src='images/activites/1_xlarge/kilyan.jpg' alt="activites">
                     <figcaption>Parc national des calanques</figcaption>
                 </figure>
-            <div class="test6">
-                <figure class="activites">
+            </div>
+            <div class="map">
+                <figure class="column">
                     <img src='images/activites/3_medium/florian.jpg' alt='activites'>
                     <figcaption>Notre-Dame-de-la-garde</figcaption>
                 </figure>
-                <figure class="activites">
+                <figure class="longchamp">
                     <img src='images/activites/3_medium/lena.jpg' alt="activites">
                     <figcaption>Parc Longchamp</figcaption>
                 </figure>
             </div>
             </div>
         </aside>
-    </section>
-    <footer id="info">
+    
+    <footer> 
+    <div id="info">
             <div id="a_propos">
                 <h3>A propos</h3>
                 <ul>
@@ -216,6 +221,7 @@
                 <li><a href="#">Nous contacter</a></li>
                 </ul>
             </div>
+    </div>
     </footer>
             
 

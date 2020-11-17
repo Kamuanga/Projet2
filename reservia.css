@@ -76,72 +76,173 @@ button{
 	background-color: #0065FC;
 }
 
-#filtres span{
+#filtres div{
 	border: 2px solid #DEEBFF;
 	border-radius: 30px;
 	padding: 4px;
+	margin-right: 70px;
 }
-span, .fas, .filtres {
+
+div, .fas, .filtres {
 	display: flex;
 	justify-content: flex-start;
 }
+
+
 #filtres a:hover{
 	text-decoration: blink;
 	color: black;
 	border: 1px solid black;
 }
+article{
+	display: flex;
+	justify-content: space-around;
+}
 #section_hebergements{
-	margin: auto;
+	width: 70%;
+	margin-top: -45px;
+	margin-bottom: 30%;
 	display: flex;
 	flex-direction: column;
 	background-color: #F2F2F2;
+	border-radius: 35px;
+}
+figure.hebergement{
+
+	border: 2px solid white;
+	border-radius: 20px;
+	-webkit-box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
+-moz-box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
+box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
+	
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	background-color: white;
+	overflow: hidden;
+
+}
+#section_hebergements h2{
+	margin-left: 45px;
+	margin-bottom: 1px;
+}
+figure.populaires img{
+	display: block;
+	float: left;
+}
+figcaption.legende2{
+	display: block;
+	float:right;
+	
+}
+figcaption.legende2 .etoile{
+	margin-top: 20px;
 }
 #section_les_plus_populaires{
+	width: 25%;
 	display: flex;
 	flex-direction: column;
-	background-color: #F2F2F2
+	background-color: #F2F2F2;
+	margin-top:-60px;
+	margin-bottom: 260px;
+}
+figure.populaires{
+	width: 84%;
+	height: 19%;
+	border: 2px solid white;
+	border-radius: 22px;
+	background-color: white;
+	-webkit-box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22); 
+box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
 }
 #section_les_plus_populaires img {
 	position: relative;
 	width: 30%;
-	height:100px;
+	height:103%;
 	object-fit: cover;
+	border-radius: 16px;
 }
 
+/*partie activites */
 
 #section_activites{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
 	border: 2px;
 	border-radius: 7px;
 }
-.test6{
+#section_activites figure{
+	margin: 0;
+	width: 100%;
+	border-radius: 24px;
+	background-color: white;
+	-webkit-box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22); 
+box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
+}
+#section_activites img{
+	border-radius: 19px;
+}
+#section_activites figcaption{
+	border-bottom: 2px;
+	margin-left: 15px;
+}
+figure.activites{
+	height: 100%;
+}
+figure.column{
+	height: 150px;
+}
+figure.column img{
+	height: 100%;
+	object-fit: cover;
+}
+figure.frioul img{
+	margin-top: 42px;
+}
+figure.longchamp img{
+	margin-top: 23px;
+}
+.map{
+	height: 400px;
+	width: 20%;
 	display: flex;
 	flex-direction: column;
+	border: 1px;
 }
+
+.image{
+	width: 20%;
+	height: 400px;
+	border: 1px solid white;
+}
+.column{
+	border: 1px solid white;
+}
+/*partie activites*/
 
 .bloc1{
 	display: flex;
 	justify-content: flex-start;
 }
-.bloc4{
+.bloc2{
 	display: flex;
 	justify-content: flex-start;
 }
-
+/*
 figure{
-	border: 2px;
-	border-radius: 10px;
+	border: 2px solid white;
+	border-radius: 20px;
 	-webkit-box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
 -moz-box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
 box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
 	margin-left: : 20px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-top: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
 	background-color: white;
 	overflow: hidden;
 } 
+*/
 figure.hebergement{
 	width: 250px;
 	height: 206px;
@@ -159,12 +260,11 @@ figure.bloc1{
 	width: 250px;
 	height: 150px;
 }
-.essai{
-	width: 100%;
-	height: 100%;
+
+figure.activites img{
+	object-fit: cover;
+	height: 90%;
 }
-
-
 h2{
    font-size: large;
    font-style: normal;
@@ -173,9 +273,11 @@ h2{
 	margin-left: 120px;
 	flex-grow: 2;
 }
-
+figcaption p{
+	margin-bottom: -8px;
+}
 #section_activites img{
-	width: 150px;
+	width: 100%;
 }
 #pop img{
      width: 150px;
@@ -224,9 +326,8 @@ footer
 	margin-left: 64px;
 	text-align: left;
 	text-decoration: none;
-
-
 }
+
 #a_propos ul, #a_propos h3
 {
 list-style-type: none;
