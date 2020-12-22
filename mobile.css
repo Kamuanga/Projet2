@@ -1,0 +1,146 @@
+@media screen and (max-width: 768px){
+	body{
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	header{
+     
+	}
+	.header{
+		flex-direction: column;
+	}
+	.s_inscrire{
+		position: absolute;
+		top: 20PX;
+		right: 0;
+	}
+	nav li.border_effect{
+		width: 50%;
+		text-align: center;
+		margin-right: 0;
+	}
+	nav li.border_effect:hover {
+		border-bottom: 2px solid rgb(0, 93, 248);
+
+	}
+
+	nav ul{
+		padding: 0;
+	}
+	.filtres_column{
+		flex-wrap: wrap;
+	}
+	#filtres div{
+		display: flex;
+		border: 0;
+		margin: 0;
+	}
+	#filtres{
+		display: block;
+	}
+article {
+	
+	flex-direction:column-reverse;
+}
+#section_hebergements{
+	background-color: white;
+}
+#section_hebergements h2{
+	margin: 20px;
+	margin-left: 10px;
+}
+.bloc1{
+	display: flex;
+	flex-direction: column;
+}
+.bloc2{
+	display: flex;
+	flex-direction: column;
+}
+figure.hebergement{
+	display:flex;
+	flex-direction: column;
+	width: 303px;
+	height: 200px;
+	border: 2px solid white;
+	border-radius: 20px;
+	-webkit-box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22); 
+box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
+	background-color: white;
+	overflow: hidden;
+	margin:revert;
+
+}
+figure .picture {
+	width: 100%;
+}
+#section_les_plus_populaires{
+	width: 100%;
+	margin-bottom: 77px;
+}
+figure.populaires{
+	width: 300px;
+}
+figure.populaires img{
+	height: 100%;
+}
+#section_activites{
+	background-color: white;
+	flex-direction: column;
+}
+#section_activites figure{
+	margin: 0 auto;
+	margin-bottom: 20px;
+width: 280px;
+border-radius: 24px;
+background-color: white;
+-webkit-box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
+box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
+
+}
+figure.figure-mobile{
+    width: 180%;
+    height: 198px;
+
+}
+
+.image, .map {
+	width: 100%;
+	height: 100%;
+}
+
+
+#info{
+	background-color: #F2F2F2;
+	width: 100%;
+	flex-direction: column;
+}
+#a_propos {
+	padding: 0;
+}
+#a_propos a, #assistance a, #nos_hebergements a{  
+	text-align: left;
+	text-decoration: none;
+	padding: 0;
+}
+
+#a_propos h3, #assistance h3, 
+#nos_hebergements h3 {
+	text-align: left;
+	margin-left: 15px;
+}
+
+#a_propos ul, #assistance ul, 
+#nos_hebergements ul
+{
+	list-style-type: none;
+	text-align: left;
+	padding-left: 0;
+	margin-left: 15px;
+}
+#assistance{
+	margin-left: 0px;
+}
+
+}

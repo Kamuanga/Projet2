@@ -28,27 +28,39 @@ nav li
 	float: right;
 	margin-right: 15px;
 	display: inline;
-	margin-bottom: : 300px;
+}
+nav li:hover{
+	border-top: 2px solid blue;
+	background-color: white;/*rgb(29, 116, 248 );*/
 }
 nav ul{
 	display: flex;
 }
 .header{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	margin-bottom: 30px;
 }
-.menu{
-	margin-left: 600px;
-}
+
 .recherche{
 	padding-bottom: 15px;
 }
-.fa-dog, .fa-heart, .fa-child, .fa-money-bill, .fa-star{
+.fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave{
 	list-style-type: none;
-	padding-top: 10px;
-	margin-right: -40px;
+	color: #0065FC;
+	margin: 0;
+position: absolute;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translate(-50%,-50%);
+left: 50%;
+padding-top: 0px;
+}
+.blue-star{
 	color: #0065FC
+}
+.grey-star{
+	color: rgb(217,217,217);
 }
 .filtre{
 	padding-top: 15px;
@@ -59,7 +71,8 @@ p{
 	font-style: none;
 }
 .fa-map-marker-alt{
-	border: 15px;
+	border-radius: 9px 1px 1px 6px;
+	border-bottom-left-radius: ;
 	padding: 10px;
 	background-color: #F2F2F2; 
 }
@@ -71,22 +84,39 @@ input{
 }
 button{
 	border: 1px;
-	border-radius: 10px;
+	border-top-right-radius: 11px;
+	border-bottom-right-radius: 13px;
+	margin-left: -2px;
 	padding: 10px;
-	background-color: #0065FC;
+	background-color: rgb(18, 106, 248);
 }
 
-#filtres div{
-	border: 2px solid #DEEBFF;
+
+#filtres div:not(.filtres_column){
+	
+	border: 2px solid rgb(231, 231, 231);
 	border-radius: 30px;
-	padding: 4px;
-	margin-right: 70px;
+	margin-right: 10px;
+	justify-content: space-between;
+
+}
+#filtres div{
+	display: flex;
+}
+#filtres{
+	display: flex;
+	width: 72%;
+
+}
+.icone{
+	width: 38px;
+	height: 38px;
+	margin-left: -1px;
+	background-color: rgb(222, 236, 254);
+	border-radius: 100%;
+	position: relative;
 }
 
-div, .fas, .filtres {
-	display: flex;
-	justify-content: flex-start;
-}
 
 
 #filtres a:hover{
@@ -107,17 +137,20 @@ article{
 	background-color: #F2F2F2;
 	border-radius: 35px;
 }
+.picture:hover img{
+	/* L'image est grossie de 25% */
+-webkit-transform:scale(1.25); /* Safari et Chrome */
+-moz-transform:scale(1.25); /* Firefox */
+-ms-transform:scale(1.25); /* Internet Explorer 9 */
+ 
+}
 figure.hebergement{
 
 	border: 2px solid white;
 	border-radius: 20px;
-	-webkit-box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
--moz-box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
-box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
-	
-	padding-left: 3px;
-	padding-right: 3px;
-	padding-top: 3px;
+	-webkit-box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22); 
+box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
+margin: auto;
 	background-color: white;
 	overflow: hidden;
 
@@ -126,6 +159,9 @@ box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
 	margin-left: 45px;
 	margin-bottom: 1px;
 }
+h3{
+	margin-left: 20px;
+}
 figure.populaires img{
 	display: block;
 	float: left;
@@ -133,10 +169,15 @@ figure.populaires img{
 figcaption.legende2{
 	display: block;
 	float:right;
+	margin-top: -14px;
+	margin-right: 18px;
 	
 }
 figcaption.legende2 .etoile{
 	margin-top: 20px;
+}
+p.star{
+	margin-top: 42px;
 }
 #section_les_plus_populaires{
 	width: 25%;
@@ -148,19 +189,21 @@ figcaption.legende2 .etoile{
 }
 figure.populaires{
 	width: 84%;
-	height: 19%;
+	height: 123px;
 	border: 2px solid white;
 	border-radius: 22px;
 	background-color: white;
 	-webkit-box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22); 
 box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
+margin: auto;
+margin-bottom: 58px;
 }
 #section_les_plus_populaires img {
 	position: relative;
 	width: 30%;
 	height:103%;
 	object-fit: cover;
-	border-radius: 16px;
+	border-radius: 16px 0px 0px 16px;
 }
 
 /*partie activites */
@@ -180,7 +223,7 @@ box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
 box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
 }
 #section_activites img{
-	border-radius: 19px;
+	border-radius: 19px 19px 0px 0px;
 }
 #section_activites figcaption{
 	border-bottom: 2px;
@@ -190,24 +233,39 @@ figure.activites{
 	height: 100%;
 }
 figure.column{
-	height: 150px;
+	height: 50%;
 }
 figure.column img{
-	height: 100%;
+	height: 80%;
 	object-fit: cover;
 }
-figure.frioul img{
-	margin-top: 42px;
+figure.frioul{
+	
+	height: 35%;
 }
 figure.longchamp img{
-	margin-top: 23px;
+	height: 80%;
+}
+figure.longchamp{
+	height: 45%;
+}
+figure.notre-dame-de-la-garde{
+	height: 45%;
 }
 .map{
 	height: 400px;
 	width: 20%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	border: 1px;
+}
+.img-container{
+	height: 80%;
+}
+.img-container img{
+	object-fit: cover;
+	height: 100%;
 }
 
 .image{
@@ -223,11 +281,14 @@ figure.longchamp img{
 .bloc1{
 	display: flex;
 	justify-content: flex-start;
+	width: 100%;
+	margin-bottom: 30px;
 }
 .bloc2{
 	display: flex;
 	justify-content: flex-start;
 }
+
 /*
 figure{
 	border: 2px solid white;
@@ -244,8 +305,8 @@ box-shadow: -12px 7px 120px 0px rgba(207,203,207,1);
 } 
 */
 figure.hebergement{
-	width: 250px;
-	height: 206px;
+	width:28%;
+	height: 204px;
 }
 figure .picture{
 	width: 250px;
@@ -269,10 +330,7 @@ h2{
    font-size: large;
    font-style: normal;
 }
-.etoile{
-	margin-left: 120px;
-	flex-grow: 2;
-}
+
 figcaption p{
 	margin-bottom: -8px;
 }
@@ -316,14 +374,28 @@ footer
 
 #info, a{
 	display: flex;
-	justify-content: space-between;
+	margin-left:;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-#a_propos, a
+
+#assistance ul, #assistance h3
 {
-	margin-left: 64px;
+	list-style-type: none;
+	padding-left: 0;
+}
+#assistance{
+	margin-left: 244px;
+}
+
+	#a_propos , a 
+{
+	text-align: left;
+	text-decoration: none;
+	color: rgb(106, 106, 106);
+}
+nav ul li a{
 	text-align: left;
 	text-decoration: none;
 }
@@ -332,20 +404,21 @@ footer
 {
 list-style-type: none;
 text-align: left;
+padding-left: 0;
 margin-left: 15px;
 }
 
-#nos_hebergements ul
+#nos_hebergements ul,#nos_hebergements h3
 {
 	text-align: center;
 	list-style-type: none;
+	margin-left: 210px;
+	padding-left: 0;
 }
 #nos_hebergements h3
 {
 	text-align: center;
 }
-#assistance ul, #assistance h3
-{
-	text-align: right;
-	list-style-type: none;
+	margin-left: 200px;
 }
+@media 
