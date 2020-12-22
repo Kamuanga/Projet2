@@ -159,9 +159,8 @@ margin: auto;
 	margin-left: 45px;
 	margin-bottom: 1px;
 }
-h3{
-	margin-left: 20px;
-}
+
+	
 figure.populaires img{
 	display: block;
 	float: left;
@@ -186,6 +185,12 @@ p.star{
 	background-color: #F2F2F2;
 	margin-top:-60px;
 	margin-bottom: 260px;
+	position: relative;
+}
+.fa-chart-line{
+	position: absolute;
+	right: 22px;
+	top: 19px;
 }
 figure.populaires{
 	width: 84%;
@@ -236,7 +241,7 @@ figure.column{
 	height: 50%;
 }
 figure.column img{
-	height: 80%;
+	height: 100%;
 	object-fit: cover;
 }
 figure.frioul{
@@ -244,7 +249,7 @@ figure.frioul{
 	height: 35%;
 }
 figure.longchamp img{
-	height: 80%;
+	height: 100%;
 }
 figure.longchamp{
 	height: 45%;
@@ -261,13 +266,18 @@ figure.notre-dame-de-la-garde{
 	border: 1px;
 }
 .img-container{
-	height: 80%;
+	height: 90%;
 }
 .img-container img{
 	object-fit: cover;
 	height: 100%;
 }
-
+.img-container-xs{
+	height: 80%;
+}
+.img-container-s{
+height: 80%;
+}
 .image{
 	width: 20%;
 	height: 400px;
@@ -324,7 +334,7 @@ figure.bloc1{
 
 figure.activites img{
 	object-fit: cover;
-	height: 90%;
+	height: 100%;
 }
 h2{
    font-size: large;
@@ -389,16 +399,17 @@ footer
 	margin-left: 244px;
 }
 
-	#a_propos , a 
+	a.link
 {
 	text-align: left;
 	text-decoration: none;
-	color: rgb(106, 106, 106);
+	color: rgb(106, 106, 106) !important;
 }
-nav ul li a{
+a{
 	text-align: left;
 	text-decoration: none;
 }
+
 
 #a_propos ul, #a_propos h3
 {

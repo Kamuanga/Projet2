@@ -104,6 +104,9 @@ figure.figure-mobile{
     height: 198px;
 
 }
+.img-container{
+	height: 80%;
+}
 
 .image, .map {
 	width: 100%;
