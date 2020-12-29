@@ -13,13 +13,18 @@ body
 	background-color: write;
 	color: write;
 }
+/*
+.menu{
+	width: 500px;
+}
+*/
 nav a
 {
 
 	text-decoration: none;
 	list-style-type: none;
 	text-align: right;
-	margin-right: 15px;
+	
 	display: inline;
 
 }
@@ -27,6 +32,8 @@ nav li
 {
 	float: right;
 	margin-right: 15px;
+	padding-top: 10px;
+	margin-left: 15px;
 	display: inline;
 }
 nav li:hover{
@@ -136,7 +143,7 @@ article{
 #section_hebergements{
 	width: 70%;
 	margin-top: -45px;
-	margin-bottom: 30%;
+	
 	display: flex;
 	flex-direction: column;
 	background-color: #F2F2F2;
@@ -189,7 +196,7 @@ p.star{
 	flex-direction: column;
 	background-color: #F2F2F2;
 	margin-top:-60px;
-	margin-bottom: 260px;
+	
 	position: relative;
 }
 .fa-chart-line{
@@ -211,12 +218,15 @@ margin-bottom: 58px;
 #section_les_plus_populaires img {
 	position: relative;
 	width: 30%;
-	height:103%;
+	height:100%;
 	object-fit: cover;
 	border-radius: 16px 0px 0px 16px;
 }
 
 /*partie activites */
+aside{
+	margin-top: 64px;
+}
 
 #section_activites{
 	display: flex;

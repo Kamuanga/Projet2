@@ -41,7 +41,13 @@
 	}
 	#filtres{
 		display: block;
+		width: 98%;
+		padding-left: 2%;
 	}
+	a.filtres{
+		padding-right: 37px;
+	}
+
 article {
 	
 	flex-direction:column-reverse;
@@ -81,6 +87,9 @@ figure .picture {
 #section_les_plus_populaires{
 	width: 100%;
 	margin-bottom: 77px;
+}
+#section_les_plus_populaires img{
+	margin-right: 5px;
 }
 figure.populaires{
 	width: 300px;
