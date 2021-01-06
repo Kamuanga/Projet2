@@ -16,18 +16,31 @@
 	}
 	.s_inscrire{
 		position: absolute;
-		top: 20PX;
-		right: 0;
+		top: 10PX;
+		right: -9px;
 	}
 	nav li.border_effect{
 		width: 50%;
 		text-align: center;
 		margin-right: 0;
-	}
-	nav li.border_effect:hover {
-		border-bottom: 2px solid rgb(0, 93, 248);
+		margin-left: 0px;
+		border-bottom: 1px solid grey;
+		padding-bottom: 5px;
 
 	}
+	nav li.border_effect:hover {
+		border-bottom: 1px solid rgb(0, 93, 248);
+		padding-bottom: 5px;
+		
+
+	}
+	nav li.border_effect:hover a {
+		color: rgb(19,107,248);
+	}
+	nav li:hover{
+		border-top: 0px;
+	}
+
 
 	nav ul{
 		padding: 0;
@@ -39,7 +52,7 @@
 
 	}
 	.menu{
-		border-bottom: 3px solid rgb(19, 107, 248);
+		width: 100%;
 	}
 	.filtres_column{
 		flex-wrap: wrap;
@@ -48,6 +61,8 @@
 		display: flex;
 		border: 0;
 		margin: 0;
+		
+
 	}
 	#filtres{
 		display: block;
@@ -57,6 +72,9 @@
 	a.filtres{
 		padding-right: 37px;
 	}
+	.filter_margin .icone a{
+		margin-bottom: 10px ;
+	}
 
 article {
 	
@@ -64,6 +82,7 @@ article {
 }
 #section_hebergements{
 	background-color: white;
+	width: 100%;
 }
 #section_hebergements h2{
 	margin: 20px;
@@ -88,7 +107,8 @@ figure.hebergement{
 box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
 	background-color: white;
 	overflow: hidden;
-	margin:revert;
+	margin-bottom: 25px;
+	
 
 }
 figure .picture {

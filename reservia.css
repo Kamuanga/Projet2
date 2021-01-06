@@ -10,8 +10,8 @@ body
 	margin-left: 30px;
 	margin-right: 10px;
 	font-family: raleway;
-	background-color: write;
-	color: write;
+	background-color: white;
+	color: black;
 }
 /*
 .menu{
@@ -24,24 +24,40 @@ nav a
 	text-decoration: none;
 	list-style-type: none;
 	text-align: right;
-	
+	color: rgb( 18, 107, 250);
 	display: inline;
+    
 
+}
+.menu{
+	width: 500px;
 }
 nav li
 {
-	float: right;
+	
+
 	margin-right: 15px;
 	padding-top: 10px;
 	margin-left: 15px;
 	display: inline;
+	border-top: 2px solid white;
+	text-align: center;
+	width: 25%;
 }
 nav li:hover{
-	border-top: 2px solid blue;
+	border-top: 2px solid rgb(19, 107, 248);
 	background-color: white;/*rgb(29, 116, 248 );*/
+	
+
+}
+nav li a:hover{
+	color:rgb(19, 107, 248);
 }
 nav ul{
 	display: flex;
+}
+.border_effect a{
+	color: grey;
 }
 .header{
 	display: flex;
@@ -74,12 +90,11 @@ padding-top: 0px;
 	margin-right: 10px;
 }
 p{
-	font-weight: none;
-	font-style: none;
+	font-weight: normal;
+	font-style: normal;
 }
 .fa-map-marker-alt{
 	border-radius: 9px 1px 1px 6px;
-	border-bottom-left-radius: ;
 	padding: 10px;
 	background-color: #F2F2F2; 
 }
@@ -88,6 +103,22 @@ input{
 	max-height: 80px;
 	padding: 7px;
 	color: #0065FC;
+}
+.information{
+	display: flex;
+
+}
+.info_icone{
+	width: 25px;
+	height: 25px;
+	border-radius:100%;
+	border: 1px solid rgb(231, 231, 231);
+	padding: 2px;
+	text-align: center;
+	line-height: 25px;
+	margin-right: 10px;
+	margin-top: 7px;
+	color: rgb(19, 107, 248);
 }
 button{
 	border: 1px;
@@ -129,6 +160,10 @@ a.filtres{
 	position: relative;
 }
 
+.info{
+	width: 10px;
+	height: 10px;
+}
 
 
 #filtres a:hover{
@@ -367,11 +402,7 @@ figcaption p{
      height: 170px;
 }
 
-.fa-info{
-	border: 1px solid #DEEBFF;
-	border-radius: 25px;
-	padding: 10px;
-}
+
 article{
 	display: flex;
 	align-items: stretch;
@@ -380,12 +411,7 @@ article{
 
 
 
-p
-{
-	border border-top: 
-}
 
-}
 .section
 {
 	float: left;
@@ -399,7 +425,6 @@ footer
 
 #info, a{
 	display: flex;
-	margin-left:;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -445,6 +470,3 @@ margin-left: 15px;
 {
 	text-align: center;
 }
-	margin-left: 200px;
-}
-@media 
