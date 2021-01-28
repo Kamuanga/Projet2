@@ -3,12 +3,11 @@
 }
 header h1
 {
-	font-family: 'Ballparkweiner', serif;
+	font-family: arial, serif;
 }
 body
 {
-	margin-left: 30px;
-	margin-right: 10px;
+	margin: 0;
 	font-family: raleway;
 	background-color: white;
 	color: black;
@@ -29,6 +28,9 @@ nav a
     
 
 }
+nav{
+	margin-top: -13px;
+}
 .menu{
 	width: 500px;
 }
@@ -37,7 +39,7 @@ nav li
 	
 
 	margin-right: 15px;
-	padding-top: 10px;
+	padding-top: 35px;
 	margin-left: 15px;
 	display: inline;
 	border-top: 2px solid white;
@@ -63,6 +65,12 @@ nav ul{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 30px;
+
+}
+
+header{
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .recherche{
@@ -102,7 +110,26 @@ input{
 	width: 150px;
 	max-height: 80px;
 	padding: 7px;
-	color: #0065FC;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+    font-style: unset;
+    font-size: 13px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+  font-weight: bold;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+  font-weight: bold
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+  font-weight: bold;
+
 }
 .information{
 	display: flex;
@@ -127,6 +154,7 @@ button{
 	margin-left: -2px;
 	padding: 10px;
 	background-color: rgb(18, 106, 248);
+	color: white;
 }
 
 
@@ -139,17 +167,22 @@ button{
 
 }
 a.filtres{
-	padding-right: 50px;
-	padding-left: 10px;
+	margin-right: 12px;
+	
 	color: black;
 }
 #filtres div{
 	display: flex;
+	
+	justify-content: space-between;
 }
 #filtres{
 	display: flex;
 	width: 72%;
 
+}
+.filtres_column{
+	width: 86%;
 }
 .icone{
 	width: 38px;
@@ -216,13 +249,17 @@ figcaption.legende2{
 	display: block;
 	margin-top: -9px;
 	margin-right: 18px;
+
 	
 }
 figcaption.legende2 .etoile{
 	margin-top: 20px;
 }
 p.star{
-	margin-top: 42px;
+	position: absolute;
+	bottom: 10px;
+	left: 80px;
+
 }
 #section_les_plus_populaires{
 	width: 25%;
@@ -248,6 +285,7 @@ figure.populaires{
 box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
 margin: auto;
 margin-bottom: 58px;
+position: relative;
 }
 #section_les_plus_populaires img {
 	position: relative;

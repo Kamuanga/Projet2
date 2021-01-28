@@ -14,7 +14,7 @@ figure.hebergement{
 	flex-direction: column;
 }
 figure.populaires{
-	width: 100%;
+	width: 84%;
 	display: flex;
 	
 }
