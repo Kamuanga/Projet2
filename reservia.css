@@ -239,6 +239,9 @@ margin: auto;
 	margin-left: 45px;
 	margin-bottom: 1px;
 }
+figcaption.legende1{
+	margin-left: 10px;
+}
 
 	
 figure.populaires img{
@@ -249,6 +252,8 @@ figcaption.legende2{
 	display: block;
 	margin-top: -9px;
 	margin-right: 18px;
+	width: 80%;
+	margin-left:35%;
 
 	
 }
@@ -258,7 +263,7 @@ figcaption.legende2 .etoile{
 p.star{
 	position: absolute;
 	bottom: 10px;
-	left: 80px;
+	left: 90px;
 
 }
 #section_les_plus_populaires{
@@ -299,7 +304,9 @@ position: relative;
 aside{
 	margin-top: 64px;
 }
-
+h2.activites{
+	margin-left: 15px;
+}
 #section_activites{
 	display: flex;
 	justify-content: space-around;
@@ -406,7 +413,7 @@ figure.hebergement{
 	height: 204px;
 }
 figure .picture{
-	width: 250px;
+	width: 100%;
 	height: 100px;
 	overflow-y: hidden;
 }
@@ -438,7 +445,9 @@ figcaption p{
      width: 150px;
      height: 170px;
 }
-
+h3{
+	margin-left: 20px;
+}
 
 article{
 	display: flex;

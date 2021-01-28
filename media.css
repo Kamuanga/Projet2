@@ -5,16 +5,36 @@
 	header{
 
 	}
+	#filtres{
+		width: 87%;
+	}
 article {
 	
-	
+	flex-direction: column-reverse;
+}
+#section_hebergements{
+	width: 100%;
+	margin-bottom: 15px;
+}
+#section_les_plus_populaires{
+	width: 100%;
+	margin-bottom: 55px;
+}
+h2{
+	margin-left: 20px;
+}
+figcaption.legende2{
+	margin-left: 15px;
+}
+p.star{
+	margin-left: 15px;
 }
 figure.hebergement{
 	display:flex;
 	flex-direction: column;
 }
 figure.populaires{
-	width: 84%;
+	width: 27%;
 	display: flex;
 	
 }

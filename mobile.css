@@ -111,6 +111,9 @@ box-shadow: 2px 1px 6px 5px rgba(0,0,0,0.22);
 	
 
 }
+figcaption.legende1{
+	margin-left: 16px;
+}
 figure .picture {
 	width: 100%;
 }
@@ -126,6 +129,9 @@ figure.populaires{
 }
 figure.populaires img{
 	height: 100%;
+}
+p.star{
+	margin-left: 16px;
 }
 #section_activites{
 	background-color: white;
